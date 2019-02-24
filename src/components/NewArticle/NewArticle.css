@@ -1,0 +1,77 @@
+.article-form-container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+textarea{
+    resize: none;
+}
+
+.article-form{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+
+.add{
+    cursor: pointer;
+    margin-left: 20px;
+    background: url(../../assets/add.svg);
+    background-position: top left;
+    height: 50px;
+    width: 150px;
+    border: 0;
+}
+
+button:disabled{
+    cursor: default;
+    opacity: .2;
+}
+
+.camera{
+    cursor: pointer;
+    display: inline-block;
+    background: url(../../assets/camera.svg);
+    background-position: top left;
+    height: 50px;
+    width: 83px;
+}
+
+.cancel{
+    display: inline-block;
+    background: url(../../assets/cancel.svg);
+    background-position: top left;
+    height: 50px;
+    width: 150px;
+}
+
+.invalid{
+    border-color: #dc3545;
+}
+  
+.valid{
+    border-color: #28a745;
+}
+
+.message{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.message img{
+    margin-bottom: 30px;
+}
+
+.message span{    
+    text-align: center;
+    color: red;
+    font-size: 28px;
+}

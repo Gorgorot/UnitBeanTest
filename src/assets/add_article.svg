@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+    <g fill="none" fill-rule="evenodd" transform="translate(-9 1)">
+        <circle cx="53" cy="43" r="43" fill="#FFF" stroke="#FB2C10" stroke-width="2"/>
+        <text fill="#FB2C10" font-family="MyriadSetPro-Thin, Myriad Set Pro" font-size="18" font-style="condensed" font-weight="300">
+            <tspan x="19.629" y="40">Добавить </tspan> <tspan x="29.817" y="59">статью</tspan>
+        </text>
+    </g>
+</svg>
