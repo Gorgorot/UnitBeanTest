@@ -57,9 +57,9 @@ export default class NewArticle extends React.Component{
             year: 'numeric',
             month: 'short',
             day: 'numeric'
-          }).replace(/\./,',').replace(/\sг\./,"");
-        let fl = new FileReader();
-        fl.onload = e=>{            
+        }).replace(/\./,',').replace(/\sг\./,"");
+        let Reader = new FileReader();
+        Reader.onload = e=>{            
             let Article = {
                 Title: document.querySelector('#Title').value,
                 Description: document.querySelector('#Description').value,
@@ -71,7 +71,7 @@ export default class NewArticle extends React.Component{
                 article_acreated: true
             })
         }
-        fl.readAsDataURL(document.querySelector("#Image").files[0]);
+        Reader.readAsDataURL(document.querySelector("#Image").files.length ? document.querySelector("#Image").files[0] : new Blob([]));
     }
     render(){
         if(this.state.article_acreated){

@@ -6,9 +6,11 @@ class Article extends React.Component{
         document.location.href = `/#/Article/Get/${this.props.index}`;
     }
     render(){
+        
+    console.log(this.props);
         return(            
             <div className="article-list-item" onClick = { this.ReadArticle.bind(this) }>
-                <img src={ this.props.item.Image }/>
+                <img src={ this.props.item.Image } alt=""/>
                 <div className="article-list-item-header">
                     <div>
                         <span className="article-list-item-name">{ this.props.item.Title }</span>
