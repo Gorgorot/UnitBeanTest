@@ -13,7 +13,7 @@ var store = createStore(reducer);
 export default class Article extends React.Component{
     componentDidMount(){
         var comments = AllComments.filter(item=>{
-            return item.Index===this.props.match.params.id;
+            return item.Index==this.props.match.params.id;
         })     
         store.dispatch({
             type: 'SET_STATE',

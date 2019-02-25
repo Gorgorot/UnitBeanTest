@@ -80,6 +80,7 @@ class CommentsPage extends React.Component{
         }
     }
     render(){
+        console.log(this.props)
         return(
             <div>
                 <div className="form-group inline">                      
