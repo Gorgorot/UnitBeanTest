@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import './App.css';
-import './Adaptee.css';
+import './App.scss';
+import './Adaptivity.scss';
 import ArticleListPage from './components/ArticleList/ArticleListPage';
 import NewArticle from './components/NewArticle/NewArticle';
 import Article from './components/Article/ArticlePage';

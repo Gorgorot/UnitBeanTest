@@ -7,9 +7,8 @@ var reducer = (state = Map(), action)=>{
         case 'SET_STATE':{
             return state.merge(action.state);
         }
-        case 'ADD_COMMENT': {
-            var comments = state.get('comments');            
-            return state.set('comments', [...comments, action.newComment]);
+        case 'ADD_COMMENT': {   
+            return state.set('comments', [...state.get('comments'), action.newComment]);
         }
         default: break;
     }

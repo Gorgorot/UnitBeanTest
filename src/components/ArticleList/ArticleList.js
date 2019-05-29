@@ -6,20 +6,18 @@ class Article extends React.Component{
         document.location.href = `/#/Article/Get/${this.props.index}`;
     }
     render(){
-        
-    console.log(this.props);
         return(            
-            <div className="article-list-item" onClick = { this.ReadArticle.bind(this) }>
+            <div className="item" onClick = { this.ReadArticle.bind(this) }>
                 <img src={ this.props.item.Image } alt=""/>
-                <div className="article-list-item-header">
+                <div className="header">
                     <div>
-                        <span className="article-list-item-name">{ this.props.item.Title }</span>
+                        <span className="name">{ this.props.item.Title }</span>
                     </div>
                     <div>
                         <span className="date"> { this.props.item.Date }</span>
                     </div>                                
                 </div>
-                <div className="article-list-item-text">
+                <div className="text">
                     { this.props.item.Description }
                 </div>
             </div>
@@ -33,7 +31,7 @@ class ArticleList extends React.Component{
             <div className="article-list">
                 {
                     this.props.articles.map((item, index)=>
-                        <Article { ...{ item, index} } />    
+                        <Article key={ index } { ...{ item, index} } />    
                     )
                 }
             </div>         

@@ -1,11 +1,22 @@
-.article-text{
-    margin: 20px 0 40px;
-    word-break: break-word;
+.article{
+    .text{
+        margin: 20px 0 40px;
+        word-break: break-word;
+    }
+    .img{
+        display: inline-block;
+        width: 100%;
+    }
 }
 
 .inline{
     display: flex;
     flex-direction: row;
+    img{
+        display: inline-block;
+        margin-right: 20px;
+        width: unset;
+    }
 }
 
 .send{
@@ -17,17 +28,6 @@
     width: 60px;
     border: 0;
     margin-left: 20px;
-}
-
-.inline img{
-    display: inline-block;
-    margin-right: 20px;
-    width: unset;
-}
-
-.article-img{
-    display: inline-block;
-    width: 100%;
 }
 
 .comment{

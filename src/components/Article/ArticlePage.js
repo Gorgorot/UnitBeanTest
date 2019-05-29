@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import CommentsPage from '../Comments/CommentsPage';
 import reducer from '../Comments/redux/reducer';
-import './Article.css';
+import './Article.scss';
 import AllComments from '../../comments';
 
 var store = createStore(reducer);
@@ -24,9 +24,9 @@ export default class Article extends React.Component{
     }
     render(){
         return(
-            <div>
-                <img className="article-img" src={ articles[this.props.match.params.id].Image }/>
-                <div className="article-text">
+            <div className="article">
+                <img className="img" src={ articles[this.props.match.params.id].Image }/>
+                <div className="text">
                     { articles[this.props.match.params.id].Description }
                 </div>
                 <Provider store={ store }>

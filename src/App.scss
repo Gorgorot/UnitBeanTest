@@ -17,10 +17,9 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-}
-
-header img{
-    height: inherit;
+    img{
+        height: inherit;
+    }
 }
 
 .company-name{
@@ -47,9 +46,4 @@ header img{
     height: 75px;
     border-radius: 75px;
     color: red;
-}
-
-.add-button-text{
-    text-align: center;
-    font-size: 14px;
 }

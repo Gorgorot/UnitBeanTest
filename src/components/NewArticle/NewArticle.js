@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewArticle.css';
+import './NewArticle.scss';
 import { Link } from 'react-router-dom';
 import success from '../../assets/152.svg';
 
@@ -80,31 +80,31 @@ export default class NewArticle extends React.Component{
             );
         }
         else
-        return(
-            <div className="article-form-container">
-                <h2>Добавление статьи</h2>
-                <div className="article-form">   
-                    <div className="form-group">
-                        <label htmlFor="Title">Заголовок</label>                        
-                        <input className={ "form-control " + this.state.title } id="Title" type="text" onInput={ this.validate.bind(this) }/>
-                    </div>    
-                    <div className="form-group">
-                        <label htmlFor="Description">Описание</label>         
-                        <textarea className={ "form-control " + this.state.des } id="Description" rows="6" onInput={ this.validate.bind(this) } ></textarea>
-                    </div>    
-                    <label>Прикрепить изображение</label>
-                    <div className="form-group btn-panel">
-                        <label htmlFor="Image">
-                        <input id="Image" type="file" />
-                            <span className="camera"></span>
-                        </label>
-                        <div>
-                            <Link className="cancel" to="/"></Link>
-                            <button className="add" onClick = { this.createArticle } disabled={ this.state.add_disabled }></button>
-                        </div>
-                    </div>                    
+            return(
+                <div className="article-form-container">
+                    <h2>Добавление статьи</h2>
+                    <div className="article-form">   
+                        <div className="form-group">
+                            <label htmlFor="Title">Заголовок</label>                        
+                            <input className={ "form-control " + this.state.title } id="Title" type="text" onInput={ this.validate.bind(this) }/>
+                        </div>    
+                        <div className="form-group">
+                            <label htmlFor="Description">Описание</label>         
+                            <textarea className={ "form-control " + this.state.des } id="Description" rows="6" onInput={ this.validate.bind(this) } ></textarea>
+                        </div>    
+                        <label>Прикрепить изображение</label>
+                        <div className="form-group btn-panel">
+                            <label htmlFor="Image">
+                            <input id="Image" type="file" />
+                                <span className="camera"></span>
+                            </label>
+                            <div>
+                                <Link className="cancel" to="/"></Link>
+                                <button className="add" onClick = { this.createArticle } disabled={ this.state.add_disabled }></button>
+                            </div>
+                        </div>                    
+                    </div>
                 </div>
-            </div>
-        );
+            );
     }
 }

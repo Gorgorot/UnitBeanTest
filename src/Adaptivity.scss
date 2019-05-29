@@ -18,9 +18,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .article-list-item{
-        width: 80%;
+        .item{
+            width: 80%;
+        }
     }
     .btn-panel{
         flex-direction: column;
@@ -28,13 +28,13 @@
 }
 
 @media (min-width: 660px){
-    .article-list-item{
-        width: 48%;
-    }
     .article-list{            
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        .item{
+            width: 48%;
+        }
     }
     .btn-panel{
         display: flex; 
